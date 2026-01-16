@@ -12,7 +12,7 @@ function App() {
       justifyContent: 'center',
       gap: '2rem',
     }}>
-      <CoraLogomark size={100} />
+      <CoraLogomark size={24} />
       <CoraButton onClick={() => alert('Button clicked!')} />
     </div>
   )

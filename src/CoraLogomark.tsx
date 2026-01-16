@@ -15,10 +15,10 @@ export const CoraLogomark: React.FC<CoraLogomarkProps> = ({
         {`
           @keyframes radiate {
             0%, 100% {
-              filter: drop-shadow(0 0 8px rgba(77, 189, 198, 0.4));
+              filter: drop-shadow(0 0 4px rgba(0, 95, 133, 0.4));
             }
             50% {
-              filter: drop-shadow(0 0 20px rgba(77, 189, 198, 0.8)) drop-shadow(0 0 40px rgba(0, 95, 133, 0.5));
+              filter: drop-shadow(0 0 10px rgba(0, 95, 133, 0.7)) drop-shadow(0 0 18px rgba(0, 71, 100, 0.4));
             }
           }
           .cora-logomark-radiate {
