@@ -21,8 +21,23 @@ export const CoraLogomark: React.FC<CoraLogomarkProps> = ({
               filter: drop-shadow(0 0 10px rgba(0, 95, 133, 0.7)) drop-shadow(0 0 18px rgba(0, 71, 100, 0.4));
             }
           }
+          @keyframes rotateStar {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(180deg);
+            }
+          }
           .cora-logomark-radiate {
             animation: radiate 2s ease-in-out infinite;
+          }
+          .cora-inner-star {
+            transform-origin: 143.82px 144.5px;
+            transition: transform 0.3s ease-out;
+          }
+          .cora-logomark-radiate:hover .cora-inner-star {
+            animation: rotateStar 0.6s ease-in-out;
           }
         `}
       </style>
@@ -64,6 +79,7 @@ export const CoraLogomark: React.FC<CoraLogomarkProps> = ({
 
           {/* Inner cross shape */}
           <path
+            className="cora-inner-star"
             d="M143.821 83.0938C136.862 83.0968 131.239 88.7167 131.238 95.6769C131.237 115.667 114.998 131.917 95.008 131.92C88.0462 131.92 82.4261 137.541 82.4248 144.503C82.4284 151.462 88.0476 157.086 95.008 157.086C114.997 157.088 131.235 173.355 131.238 193.316C131.239 200.277 136.862 205.896 143.821 205.899C150.783 205.899 156.404 200.278 156.405 193.316C156.408 173.327 172.657 157.088 192.647 157.086C199.607 157.085 205.227 151.462 205.23 144.503C205.229 137.542 199.608 131.921 192.647 131.92C172.656 131.918 156.406 115.668 156.405 95.6769C156.404 88.7152 150.783 83.0943 143.821 83.0938Z"
             fill="url(#logomarkGradient)"
           />
