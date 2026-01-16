@@ -1,4 +1,5 @@
 import { CoraButton } from './CoraButton'
+import { CoraLogomark } from './CoraLogomark'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       justifyContent: 'center',
       gap: '2rem',
     }}>
+      <CoraLogomark size={100} />
       <CoraButton onClick={() => alert('Button clicked!')} />
     </div>
   )
